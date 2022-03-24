@@ -318,10 +318,10 @@ is_string_or_uri(Value) when is_binary(Value) ->
 is_string_or_uri(_Value) ->
   false.
 
-trim(Binary, left) ->
-  trim_left(Binary);
-trim(Binary, right) ->
-  trim_right(Binary);
+%%trim(Binary, left) ->
+%%  trim_left(Binary);
+%%trim(Binary, right) ->
+%%  trim_right(Binary);
 trim(Binary, both) ->
   trim_left(trim_right(Binary)).
 
